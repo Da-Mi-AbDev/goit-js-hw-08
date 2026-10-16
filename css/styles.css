@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+.gallery {
+  display: flex;
+  flex-direction: row;
+  padding: 24px 156px;
+  width: 1440px;
+  height: auto;
+  gap: 24px;
+  flex-wrap: wrap;
+  background: #fff;
+  list-style: none;
+}
+.gallery-item {
+  display: flex;
+}
+.gallery-image {
+  display: inline;
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 300 ease-in-out;
+}
+.gallery-image:hover {
+  transform: scale(1.04);
+}
+.basicLightbox {
+  background: rgba(46, 47, 66, 0.8);
+}
